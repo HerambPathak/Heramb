@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>First HTML Webpage</title></head>
+<body <font style="background-color: rgb(15, 7, 124);"><center><h1><u>Arthemetic Calculator</u></h1></center></body>
+    <script>
+
+        function Numbers() {
+            var number1=parseInt(prompt("Enter first number:"));
+            var number2=parseInt(prompt("Enter second number:"));
+            var operator=prompt("Enter operator:")
+        switch (operator) {
+            case '+':
+            Additon(number1,number2)
+                break;
+
+                case '+':
+                Subtraction(number1,number2)
+                break;
+
+                case '-':
+                Multiplication(number1,number2)
+                break;
+
+                case '*':
+                Division(number1,number2)
+                break;
+        
+            default:
+                document.write("The calculation could not take place because the operator entered was invalid.")
+        }
+        }
+
+        Numbers()
+
+        function Additon(number1,number2) {
+            var sum=number1+number2;
+            document.write(number1+" + "+number2+" + "+" = "+ sum +"<br>");
+        }
+    
+        function Subtraction(number1,number2) {
+            var difference=number1-number2;
+            document.write(number1+" - "+number2+" = "+ difference+"<br>");   
+        }
+    
+        function Multiplication(number1,number2) {
+            var product=number1*number2;
+            document.write(number1+" * "+number2+" = "+product+"<br>");   
+        }
+    
+        function Division(number1,number2) {
+            var quotient=number1/number2;
+            document.write(number1+" / "+number2+" = "+quotient);   
+        }
+    
+    </script>
+<style>
+    h1{
+        color: rgb(82, 194, 17);
+    }
+</style>
+</html>
